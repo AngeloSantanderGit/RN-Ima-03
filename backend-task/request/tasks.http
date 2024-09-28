@@ -1,0 +1,56 @@
+@api = http://localhost:3000/tasks
+
+@api_docs = http://localhost:3000/docs
+
+GET {{api}}
+
+###
+
+GET {{api}}/9
+
+###
+
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "four task",
+    "description": "some description task"
+}
+
+###
+DELETE {{api}}/18
+
+###
+PUT {{api}}/17
+Content-Type: application/json
+
+{
+    "description": "descripcion tres",
+    "title": "titulo 3"
+}
+
+###
+POST {{api_docs}}
+Content-Type: formData
+
+{
+    "nombre_proveedor": "four task",
+    "direccion": "some description task",
+    "fecha_factura": "2007-10-15",
+    "numero_factura": "00254"
+
+}
+
+###
+GET {{api_docs}}/prod
+
+###
+GET {{api_docs}}
+
+###
+
+GET {{api_docs}}/3
