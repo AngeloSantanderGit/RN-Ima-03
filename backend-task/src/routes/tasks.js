@@ -3,7 +3,7 @@ import { deleteTask, getTaskCount, getTasks, saveTask, updateTask, getTask } fro
 import { getInvo, getInvoId, getProd, getProdByInvo } from "../controllers/documents.js";
 import  {processInvoice}  from "../controllers/processInvoice.js";
 import {saveImage} from '../controllers/saveImage.js'
-import { publicImag } from "../controllers/publicImag.js";
+//import { publicImag } from "../controllers/publicImag.js";
 
 const router = Router();
 
@@ -82,5 +82,5 @@ router.get('/docs', getInvo)
 router.get('/docs/prod', getProd)
 router.get('/docs/:id', getInvoId)
 router.get('/prod/:N_Factura', getProdByInvo)
-router.get('/public', publicImag)
+//router.get('/public', publicImag)
 export default router
